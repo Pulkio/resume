@@ -1,145 +1,177 @@
 
 
-/* If it jumps from one slide to the next then refresh the page */
-html, body { 
-    margin:0; padding:0;
-    width: 100%; height: 100%;
-    overflow:hidden;    
-    -webkit-perspective: 550px;
-    perspective: 550px;
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
   }
-  .slide {
-    position:absolute;
-    width:100%; height:100%;
-    -webkit-transform-origin: bottom center;
-    transform-origin: bottom center;
+  .container-fluid{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #FFF;
   }
-  .slide div { position:absolute; width:100%; height:100%; }
-  .slide:nth-of-type(1) { -webkit-animation:slideTop 20s 16s ease-out infinite; animation:slideTop 20s 16s ease-in-out infinite; }
-  .slide:nth-of-type(2) { -webkit-animation:slideRight 20s 12s ease-out infinite;
-    animation:slideRight 20s 12s ease-in-out infinite; }
-  .slide:nth-of-type(3) { -webkit-animation:slideLeft 20s 8s ease-out infinite;
-    animation:slideLeft 20s 8s ease-in-out infinite; }
-  .slide:nth-of-type(4) { -webkit-animation:slideBottom 20s 4s ease-out infinite;
-    animation:slideBottom 20s 4s ease-in-out infinite; }
-  .slide:nth-of-type(5) { -webkit-animation:slideBottom 20s ease-out infinite;
-    animation:slideBottom 20s ease-in-out infinite; }
-  
-  @-webkit-keyframes slideBottom {
-    0%,5% { -webkit-transform: rotateX(0); z-index:1; }
-    10% { -webkit-transform: rotateX(90deg); }
-    13% { z-index:1; -webkit-transform: rotateX(90deg) translateY(100%); }
-    50% { z-index:-1; -webkit-transform: rotateX(90deg) translateY(100%); }
-    53%,73% { z-index:-1; -webkit-transform:rotateX(0) translateY(0); }
+  /* ============= Animation background ========= */
+  .background {
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding:0;
+    margin:0px;
   }
-  
-  @keyframes slideBottom {
-    0%,5% { transform: rotateX(0); z-index:1; }
-    10% { transform: rotateX(90deg); }
-    13% { z-index:1; transform: rotateX(90deg) translateY(100%); }
-    50% { z-index:-1; transform: rotateX(90deg) translateY(100%); }
-    53%,80% { z-index:-1; transform:rotateX(0) translateY(0); }
-    81%,100% { z-index:0; }
+  .cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #D7D4E4;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
   }
-  /* Alternate directions: Use class or :nth-child to select the correct slide you want to affect,
-                           otherwise it will affect all of them */
-  /* .slide { to apply to all */
-  /* Left */
-  .slide:nth-of-type(3) {
-    -webkit-transform-origin: left center;
-    transform-origin: left center;
+  .cube:nth-child(2n) {
+    border-color: #FFF ;
   }
-  @-webkit-keyframes slideLeft {
-    0%,5% { -webkit-transform: rotateY(0); z-index:1; }
-    10% { -webkit-transform: rotateY(90deg); }
-    13% { z-index:1; -webkit-transform: rotateY(90deg) translateX(-100%); }
-    50% { z-index:-1; -webkit-transform: rotateY(90deg) translateX(-100%); }
-    53%,73% { z-index:-1; -webkit-transform:rotateY(0) translateX(0); }
+  .cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
   }
-  @keyframes slideLeft {
-    0%,5% { transform: rotateY(0); z-index:1; }
-    10% { transform: rotateY(90deg); }
-    13% { z-index:1; transform: rotateY(90deg) translateX(-100%); }
-    50% { z-index:-1; transform: rotateY(90deg) translateX(-100%); }
-    53%,80% { z-index:-1; transform:rotateY(0) translateX(0); }
-    81%,100% { z-index:0; }
+  .cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
   }
-  /* Right */
-  .slide:nth-of-type(2) {
-    -webkit-transform-origin: right center;
-    transform-origin: right center; 
-  } 
-  @-webkit-keyframes slideRight {
-    0%,5% { -webkit-transform: rotateY(0); z-index:1; }
-    10% { -webkit-transform: rotateY(-90deg); }
-    13% { z-index:1; -webkit-transform: rotateY(-90deg) translateX(100%); }
-    50% { z-index:-1; -webkit-transform: rotateY(-90deg) translateX(100%); }
-    53%,73% { z-index:-1; -webkit-transform:rotateY(0) translateX(0); }
+  .cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
   }
-  @keyframes slideRight {
-    0%,5% { transform: rotateY(0); z-index:1; }
-    10% { transform: rotateY(-90deg); }
-    13% { z-index:1; transform: rotateY(-90deg) translateX(100%); }
-    50% { z-index:-1; transform: rotateY(-90deg) translateX(100%); }
-    53%,80% { z-index:-1; transform:rotateY(0) translateX(0); }
-    81%,100% { z-index:0; }
+  .cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
   }
-  /* Top */
-  .slide:nth-of-type(1) { 
-    -webkit-transform-origin: top center;
-    transform-origin: top center;
+  .cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
   }
-  @-webkit-keyframes slideTop {
-    0%,5% { -webkit-transform: rotateX(0); z-index:1; }
-    10% { -webkit-transform: rotateX(-90deg); }
-    13% { z-index:1; -webkit-transform: rotateX(-90deg) translateY(-150%); }
-    50% { z-index:-1; -webkit-transform: rotateX(-90deg) translateY(-150%); }
-    53%,73% { z-index:-1; -webkit-transform:rotateX(0) translateY(0); }
-  } 
-  @keyframes slideTop {
-    0%,5% { transform: rotateX(0); z-index:1; }
-    10% { transform: rotateX(-90deg); }
-    13% { z-index:1; transform: rotateX(-90deg) translateY(-150%); }
-    50% { z-index:-1; transform: rotateX(-90deg) translateY(-150%); }
-    53%,80% { z-index:-1; transform:rotateX(0) translateY(0); }
-    81%,100% { z-index:0; } 
+  /* ================= Header ============ */
+  header{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    margin: 0;
+    padding: 0;
   }
-  
-  /* End alternate directions */
-  
-  
-  
-  
-  
-  
-  /* STYLISTIC THINGS: Photos from http://unsplash.com/ */
-  .slide:nth-of-type(1) div {
-    background:#223d65;
-    color:white;
-    text-align:center;
-    padding-top:200px;
-    font-size:16pt; 
-    font-family: "Andale Mono", AndaleMono, monospace;
+  /* navbar */
+  nav{
+    color: #FFF;
+    float: right;
+    margin:30px 90px;
   }
-  .slide:nth-of-type(2) div {
-    background: url("https://24.media.tumblr.com/61e1f6d73861cfad6e320c6d5dcecc6e/tumblr_mx3trrzUOJ1st5lhmo1_1280.jpg") center center;
-    background-size:cover;
+  nav ul{
+    list-style: none;
   }
-  .slide:nth-of-type(3) div { 
-    background: rgb(20,20,20);
-    color:white;
-    text-align:center;
-    padding-top:200px;
-    font-size:16pt;
-    font-family:Book Antiqua;
+  nav ul li {
+    float: left;
+    transition: .3s;
   }
-  .slide:nth-of-type(4) div {
-    background: url("https://31.media.tumblr.com/3afad829ce330a66b3bbb98831c1c393/tumblr_mx3tpto69r1st5lhmo1_1280.jpg") center center;
-    background-size:cover;
+  nav ul li a{
+    text-decoration: none;
+    color: #EFEEF5;
+    transition: .5;
+    font-size: 15px;
+    margin-left:16px;
   }
-  .slide:nth-of-type(5) div { 
-    background: url("https://25.media.tumblr.com/d7c46e775fa6d6c613f10bceb2703b38/tumblr_mx3tqsqckF1st5lhmo1_1280.jpg") center center;
-    background-size:cover; 
+  nav ul li:hover a{
+    text-decoration: none;
+    color: #591BC5;;
+  }
+  nav ul li:hover{
+    height: 45px;
+    padding-top: 30px;
+    margin-top: -30px;
+   background: #EFEEF5;
+    text-decoration: none;
+    transform: skew(15deg);
+  }
+  /* Logo */
+  .logo{
+    width: 35px;
+    height: 35px;
+    background: #EFEEF5;
+    margin: 40px 63px;
+    float: left;
+    transform: rotate(-30deg);
+  }
+  .logo span{
+    color: #591BC5;
+    font-size: 2em;
+    line-height: 1.4;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  /* Header content & title & button*/
+  .header-content{
+    margin-top:25%;
+    text-align: center;
+    color:  #EFEEF5;
+  }
+  .header-content h1{
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 1px;
+  }
+  .header-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px auto;
+  }
+  .header-content button{
+    width: 140px;
+    margin:20px 10px;
+    color: #591BC5;
+    font-size: 17px;
+    border:1px solid #EFEEF5;
+    font-weight: 500;
+    background: #EFEEF5;
+    border-radius: 20px;
+    padding: 10px;
+    cursor:pointer;
+    transition: .3s;
+  }
+  .header-content button:hover{
+    border-radius: 0;
+  }
+  /* Animate Background*/
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
   }
   
   
