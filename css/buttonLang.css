@@ -12,14 +12,16 @@
   font-size: 18px;
   padding: 0 18px;
   line-height: 50px;
-  text-align: center;
+  float: left;
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  position:absolute;
+  position: sticky;
+  z-index: 9999;
   top:10;
   left:10;
+  
 }
 
 .button-74:hover {
