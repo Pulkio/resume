@@ -109,7 +109,7 @@ function redirectPages(clicked_id) {
     var fileName = location.href.split("/").slice(-1); 
     if(fileName == "index.html" || fileName.length == 1) {
 
-        console.log("aaaaaaaaaaaaaaaaaaaaaaa")
+        console.log("aaaaaaaaaaaaaaaaaaaaaaa");
 
         if(clicked_id == "tab1") {
             if(elem.textContent == 'English') {
@@ -148,6 +148,8 @@ function redirectPages(clicked_id) {
             }
         } 
     } else {
+
+        console.log("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
 
         if(clicked_id == "tab1") {
             if(elem.textContent == 'English') {
