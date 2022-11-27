@@ -19,10 +19,11 @@ window.onclick = e => {
 
     if(e.target.textContent == "Français" || e.target.textContent == "English") {
 
-        if(!fileName) {
-            alert(empty);
+        
+        if(fileName.length < 3) {
+            window.location.href = "./pages/english/home.html";
         }
-        console.log(fileName + "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        
         
         if(fileName == "index.html") {
             
