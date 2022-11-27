@@ -112,7 +112,7 @@ function redirectPages(clicked_id) {
         if(clicked_id == "tab1") {
             if(elem.textContent == 'English') {
                 if(fileName.length < 3) {
-                    window.location.href = "/resume/index.html";
+                    window.location.href = "../resume/index.html";
                 } else {
                     window.location.href = "./index.html";
                 }
