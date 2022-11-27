@@ -23,6 +23,7 @@ window.onclick = e => {
             if(!fileName) {
                 alert(empty);
             }
+            console.log(fileName + "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
             window.location.href = "./pages/english/home.html";
           
         } else if(fileName == "home.html") { 
