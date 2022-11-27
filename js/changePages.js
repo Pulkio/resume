@@ -25,35 +25,35 @@ window.onclick = e => {
         }
         
         
-        if(fileName == "index.html") {
+        if(fileName.includes("index.html")) {
             
             window.location.href = "./pages/english/home.html";
           
-        } else if(fileName == "home.html") { 
+        } else if(fileName.includes("home.html")) { 
             window.location.href = "../../index.html";
            
-        } else if(fileName == "formations.html") {
+        } else if(fileName.includes("formations.html")) {
             window.location.href = "../english/studies.html";
        
-        } else if(fileName == "studies.html") {
+        } else if(fileName.includes("studies.html")) {
             window.location.href = "../french/formations.html";
            
-        } else if(fileName == "competences.html") {
+        } else if(fileName.includes("competences.html")) {
             window.location.href = "../english/skills.html";
            
-        } else if(fileName == "skills.html") {
+        } else if(fileName.includes("skills.html")) {
             window.location.href = "../french/competences.html";
            
-        } else if(fileName == "projets.html") {
+        } else if(fileName.includes("projets.html")) {
             window.location.href = "../english/projects.html";
         
-        } else if(fileName == "projects.html") {
+        } else if(fileName.includes("projects.html")) {
             window.location.href = "../french/projets.html";
             
-        } else if(fileName == "autres.html") {
+        } else if(fileName.includes("autres.html")) {
             window.location.href = "../english/others.html";
             
-        } else if(fileName == "others.html") {
+        } else if(fileName.includes("others.html")) {
             window.location.href = "../french/autres.html";
         }
     }
@@ -107,8 +107,9 @@ function redirectPages(clicked_id) {
     var elem = document.getElementById('lang');
 
     var fileName = location.href.split("/").slice(-1); 
-    if(fileName == "index.html" || fileName[0] === "") {
+    if(fileName.includes("index.html") || fileName[0] === "") {
 
+        window.alert("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         console.log("aaaaaaaaaaaaaaaaaaaaaaa");
 
         if(clicked_id == "tab1") {
@@ -149,6 +150,7 @@ function redirectPages(clicked_id) {
         } 
     } else {
 
+        window.alert("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
         console.log("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
 
         if(clicked_id == "tab1") {
