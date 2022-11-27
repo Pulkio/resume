@@ -20,7 +20,7 @@ window.onclick = e => {
     if(e.target.textContent == "Français" || e.target.textContent == "English") {
 
         
-        if(fileName.length == 0) {
+        if(fileName.length == 1) {
             window.location.href = "./pages/english/home.html";
         }
         
@@ -88,7 +88,7 @@ function changeMenuContentToFr() {
 
 function changeMenuContentToEn() {
     var fileName = location.href.split("/").slice(-1); 
-    console.log(fileName)
+    
 
     var elem1 = document.getElementById('tab1');
     elem1.textContent = 'Home';
@@ -107,7 +107,7 @@ function redirectPages(clicked_id) {
     var elem = document.getElementById('lang');
 
     var fileName = location.href.split("/").slice(-1); 
-    if(fileName == "index.html" || fileName.length == 0) {
+    if(fileName == "index.html" || fileName.length == 1) {
 
         if(clicked_id == "tab1") {
             if(elem.textContent == 'English') {
