@@ -18,12 +18,14 @@ window.onclick = e => {
     var fileName = location.href.split("/").slice(-1); 
 
     if(e.target.textContent == "Français" || e.target.textContent == "English") {
+
+        if(!fileName) {
+            alert(empty);
+        }
+        console.log(fileName + "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         
         if(fileName == "index.html") {
-            if(!fileName) {
-                alert(empty);
-            }
-            console.log(fileName + "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+            
             window.location.href = "./pages/english/home.html";
           
         } else if(fileName == "home.html") { 
