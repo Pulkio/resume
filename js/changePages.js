@@ -102,12 +102,14 @@ function changeMenuContentToEn() {
     elem5.textContent = 'Others';
 }
 
-
+//windows.location.origin
 function redirectPages(clicked_id) {
     var elem = document.getElementById('lang');
 
     var fileName = location.href.split("/").slice(-1); 
     if(fileName == "index.html" || fileName.length == 1) {
+
+        console.log("aaaaaaaaaaaaaaaaaaaaaaa")
 
         if(clicked_id == "tab1") {
             if(elem.textContent == 'English') {
