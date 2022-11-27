@@ -20,7 +20,7 @@ window.onclick = e => {
     if(e.target.textContent == "Français" || e.target.textContent == "English") {
 
         
-        if(fileName.length == 1) {
+        if(fileName[0] === "") {
             window.location.href = "./pages/english/home.html";
         }
         
@@ -107,7 +107,7 @@ function redirectPages(clicked_id) {
     var elem = document.getElementById('lang');
 
     var fileName = location.href.split("/").slice(-1); 
-    if(fileName == "index.html" || fileName.length == 1) {
+    if(fileName == "index.html" || fileName[0] === "") {
 
         console.log("aaaaaaaaaaaaaaaaaaaaaaa");
 
