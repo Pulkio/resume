@@ -20,7 +20,7 @@ window.onclick = e => {
     if(e.target.textContent == "Français" || e.target.textContent == "English") {
 
         
-        if(fileName.length < 3) {
+        if(fileName.length == 0) {
             window.location.href = "./pages/english/home.html";
         }
         
@@ -107,16 +107,12 @@ function redirectPages(clicked_id) {
     var elem = document.getElementById('lang');
 
     var fileName = location.href.split("/").slice(-1); 
-    if(fileName == "index.html") {
+    if(fileName == "index.html" || fileName.length == 0) {
 
         if(clicked_id == "tab1") {
             if(elem.textContent == 'English') {
-                if(fileName.length < 3) {
-                    window.location.href = "../resume/index.html";
-                } else {
-                    window.location.href = "./index.html";
-                }
-                
+
+                window.location.href = "./index.html";       
             } else {
                 window.location.href = "./pages/english/home.html";
             }
@@ -153,6 +149,8 @@ function redirectPages(clicked_id) {
 
         if(clicked_id == "tab1") {
             if(elem.textContent == 'English') {
+
+
                 window.location.href = "../../index.html";
             } else {
                 window.location.href = "../english/home.html";
