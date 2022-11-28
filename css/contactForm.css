@@ -1,255 +1,217 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    padding-bottom: 100px;
-  }
-  
-  #contact {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .section-header {
-    text-align: center;
-    margin: 0 auto;
-    padding: 40px 0;
-    font: 300 60px 'Oswald', sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-  }
-  
-  .contact-wrapper {
+
+.all {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px;
+    perspective: 10px;
+    transform: perspective(300px) rotateX(20deg);
+    will-change: perspective;
+    perspective-origin: center center;
+    transition: all 1.3s ease-out;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.all:hover {
+    perspective: 1000px;
+    transition: all 1.3s ease-in;
+    transform: perspective(10000px) rotateX(0deg);
+}
+.all:hover .text {
+    opacity: 1;
+}
+.all:hover > div {
+    opacity: 1;
+    transition-delay: 0s;
+}
+.all:hover .explainer {
+    opacity: 0;
+}
+.left, .center, .right, .lefter, .righter {
+    width: 20vw;
+    height: 20vh;
+    transform-style: preserve-3d;
+    border-radius: 10vw;
+    border: 1px solid #fff;
+    box-shadow: 0 0 40vw 5px #8be3e1;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 1s;
     position: relative;
-    max-width: 840px;
-  }
-  
-  /* Left contact page */
-  .form-horizontal {
-    /*float: left;*/
-    max-width: 400px;
-    font-family: 'Lato';
-    font-weight: 400;
-  }
-  
-  .form-control, 
-  textarea {
-    max-width: 400px;
-    background-color: #000;
-    color: #fff;
-    letter-spacing: 1px;
-  }
-  
-  .send-button {
-    margin-top: 15px;
-    height: 34px;
-    width: 400px;
-    overflow: hidden;
-    transition: all .2s ease-in-out;
-  }
-  
-  .alt-send-button {
-    width: 400px;
-    height: 34px;
-    transition: all .2s ease-in-out;
-  }
-  
-  .send-text {
-    display: block;
-    margin-top: 10px;
-    font: 700 12px 'Lato', sans-serif;
-    letter-spacing: 2px;
-  }
-  
-  .alt-send-button:hover {
-    transform: translate3d(0px, -29px, 0px);
-  }
-  
-  /* Begin Right Contact Page */
-  .direct-contact-container {
-    max-width: 400px;
-  }
-  
-  /* Location, Phone, Email Section */
-  .contact-list {
-    list-style-type: none;
-    margin-left: -30px;
-    padding-right: 20px;
-  }
-  
-  .list-item {
-    line-height: 4;
-    color: #aaa;
-  }
-  
-  .contact-text {
-    font: 300 18px 'Lato', sans-serif;
-    letter-spacing: 1.9px;
-    color: #bbb;
-  }
-  
-  .place {
-    margin-left: 62px;
-  }
-  
-  .phone {
-    margin-left: 56px;
-  }
-  
-  .gmail {
-    margin-left: 53px;
-  }
-  
-  .contact-text a {
-    color: #bbb;
-    text-decoration: none;
-    transition-duration: 0.2s;
-  }
-  
-  .contact-text a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  
-  /* Social Media Icons */
-  .social-media-list {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #8be3e1;
+    cursor: pointer;
+    background-blend-mode: color-burn;
+}
+.left:hover, .center:hover, .right:hover, .lefter:hover, .righter:hover {
+    box-shadow: 0 0 30px 10px #8be3e1;
+    background-color: #ccf;
+}
+.text {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    bottom: 0;
+    left: 1vw;
+    font-size: 1.5vw;
+    position: absolute;
+    will-change: transform;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 2vw #8be3e1;
+}
+
+.left {
+    transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+    background-image: url("../images/phone.png");
+}
+.center {
+    opacity: 1;
+    background-image: url("../images/idCard.png");
+}
+.right {
+    transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+    background-image: url("../images/lettre.png");
+}
+
+.explainer {
+    font-weight: 2vw;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    transition: all 0.6s ease;
+    width: 20vw;
+    height: 20vh;
+    background-color: #8be3e1;
+    background-image: radial-gradient(circle at center top, #cce, #8be3e1);
+    border-radius: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ref::first-letter {
+    font-size: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+.social-button {
     position: relative;
-    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    border-radius: 100%;
+    background: #fff;
     text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-  
-  .social-media-list li a {
-    color: #fff;
-  }
-  
-  .social-media-list li {
-    position: relative; 
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    margin: 10px 3px;
-    line-height: 60px;
-    border-radius: 50%;
-    color: #fff;
-    background-color: rgb(27,27,27);
-    cursor: pointer; 
-    transition: all .2s ease-in-out;
-  }
-  
-  .social-media-list li:after {
+}
+.social-button::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
-    transition: all .2s ease-in-out;
-  }
-  
-  .social-media-list li:hover {
-    background-color: #fff; 
-  }
-  
-  .social-media-list li:hover:after {
-    opacity: 1;  
-    transform: scale(1.12);
-    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-  }
-  
-  .social-media-list li:hover a {
-    color: #000;
-  }
-  
-  .copyright {
-    font: 200 14px 'Oswald', sans-serif;
-    color: #555;
-    letter-spacing: 1px;
-    text-align: center;
-  }
-  
-  hr {
-    border-color: rgba(255,255,255,.6);
-  }
-  
-  /* Begin Media Queries*/
-  @media screen and (max-width: 850px) {
-    .contact-wrapper {
-      display: flex;
-      flex-direction: column;
-    }
-    .direct-contact-container, .form-horizontal {
-      margin: 0 auto;
-    }  
-    
-    .direct-contact-container {
-      margin-top: 60px;
-      max-width: 300px;
-    }    
-    .social-media-list li {
-      height: 60px;
-      width: 60px;
-      line-height: 60px;
-    }
-    .social-media-list li:after {
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
-    }
-  }
-  
-  @media screen and (max-width: 569px) {
-  
-    .direct-contact-container, .form-wrapper {
-      float: none;
-      margin: 0 auto;
-    }  
-    .form-control, textarea {
-      
-      margin: 0 auto;
-    }
-   
-    
-    .name, .email, textarea {
-      width: 280px;
-    } 
-    
-    .direct-contact-container {
-      margin-top: 60px;
-      max-width: 280px;
-    }  
-    .social-media-list {
-      left: 0;
-    }
-    .social-media-list li {
-      height: 55px;
-      width: 55px;
-      line-height: 55px;
-      font-size: 2rem;
-    }
-    .social-media-list li:after {
-      width: 55px;
-      height: 55px;
-      line-height: 55px;
-    }
-    
-  }
-  
-  @media screen and (max-width: 410px) {
-    .send-button {
-      width: 99%;
-    }
-  }
+    top: -1px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+.social-button:focus, .social-button:hover {
+    color: #fff;
+}
+.social-button:focus::after, .social-button:hover::after {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    margin-left: calc(-50% - 1px);
+}
+.social-button i, .social-button svg {
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+.social-button i {
+    font-size: 25.6px;
+}
+.social-button svg {
+    height: 40%;
+    width: 40%;
+}
+.social-button--mail {
+    color: #0072c6;
+}
+.social-button--mail::after {
+    background: #0072c6;
+}
+.social-button--facebook {
+    color: #3b5999;
+}
+.social-button--facebook::after {
+    background: #3b5999;
+}
+.social-button--linkedin {
+    color: #0077b5;
+}
+.social-button--linkedin::after {
+    background: #0077b5;
+}
+.social-button--github {
+    color: #6e5494;
+}
+.social-button--github::after {
+    background: #6e5494;
+}
+.social-button--codepen {
+    color: #212121;
+}
+.social-button--codepen::after {
+    background: #212121;
+}
+.social-button--steam {
+    color: #7da10e;
+}
+.social-button--steam::after {
+    background: #7da10e;
+}
+.social-button--snapchat {
+    color: #eec900;
+}
+.social-button--snapchat::after {
+    background: #eec900;
+}
+.social-button--twitter {
+    color: #55acee;
+}
+.social-button--twitter::after {
+    background: #55acee;
+}
+.social-button--instagram {
+    color: #e4405f;
+}
+.social-button--instagram::after {
+    background: #e4405f;
+}
+.social-button--npmjs {
+    color: #c12127;
+}
+.social-button--npmjs::after {
+    background: #c12127;
+}
