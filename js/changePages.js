@@ -50,11 +50,17 @@ window.onclick = e => {
         } else if(fileName.includes("projects.html")) {
             window.location.href = "../french/projets.html";
             
-        } else if(fileName.includes("autres.html")) {
-            window.location.href = "../english/others.html";
+        } else if(fileName.includes("loisirs.html")) {
+            window.location.href = "../english/hobbies.html";
             
-        } else if(fileName.includes("others.html")) {
-            window.location.href = "../french/autres.html";
+        } else if(fileName.includes("hobbies.html")) {
+            window.location.href = "../french/loisirs.html";
+
+        } else if(fileName.includes("contact.html")) {
+            window.location.href = "../english/contactEn.html";
+            
+        } else if(fileName.includes("contactEn.html")) {
+            window.location.href = "../french/contact.html";
         }
     }
    
@@ -73,7 +79,7 @@ function updateMenuLoad() {
 function changeMenuContentToFr() {
     var fileName = location.href.split("/").slice(-1); 
   
-    console.log(fileName)
+   
     var elem1 = document.getElementById('tab1');
     elem1.textContent = 'Accueil';
     var elem2 = document.getElementById('tab2');
@@ -83,7 +89,9 @@ function changeMenuContentToFr() {
     var elem4 = document.getElementById('tab4');
     elem4.textContent = 'Projets';
     var elem5 = document.getElementById('tab5');
-    elem5.textContent = 'Autres';
+    elem5.textContent = 'Loisirs';
+    var elem6 = document.getElementById('tab6');
+    elem6.textContent = 'Contact';
 }
 
 function changeMenuContentToEn() {
@@ -99,7 +107,9 @@ function changeMenuContentToEn() {
     var elem4 = document.getElementById('tab4');
     elem4.textContent = 'Projects';
     var elem5 = document.getElementById('tab5');
-    elem5.textContent = 'Others';
+    elem5.textContent = 'Hobbies';
+    var elem6 = document.getElementById('tab6');
+    elem6.textContent = 'Contact';
 }
 
 //windows.location.origin
@@ -141,11 +151,18 @@ function redirectPages(clicked_id) {
         } 
         else if(clicked_id == "tab5") {
             if(elem.textContent == 'English') {
-                window.location.href = "./pages/french/autres.html";
+                window.location.href = "./pages/french/loisirs.html";
             } else {
-                window.location.href = "./pages/english/others.html";
+                window.location.href = "./pages/english/hobbies.html";
             }
         } 
+        else if(clicked_id == "tab6") {
+            if(elem.textContent == 'English') {
+                window.location.href = "./pages/french/contact.html";
+            } else {
+                window.location.href = "./pages/english/contactEn.html";
+            }
+        }
     } else {
 
 
@@ -181,9 +198,16 @@ function redirectPages(clicked_id) {
         } 
         else if(clicked_id == "tab5") {
             if(elem.textContent == 'English') {
-                window.location.href = "../french/autres.html";
+                window.location.href = "../french/loisirs.html";
             } else {
-                window.location.href = "../english/others.html";
+                window.location.href = "../english/hobbies.html";
+            }
+        } 
+        else if(clicked_id == "tab6") {
+            if(elem.textContent == 'English') {
+                window.location.href = "../french/contact.html";
+            } else {
+                window.location.href = "../english/contactEn.html";
             }
         } 
 
