@@ -1,0 +1,25 @@
+img.animated-gif{
+    width: 20vw;
+    height: auto;
+}
+
+.first{
+    width:100vw;
+    height:20vw;
+    position:absolute;
+    border:5px solid red;
+}
+.second{
+   border:5px solid blue;
+   width:100vw;
+   height:20vw;
+   position: relative;
+   top: 25vw;
+}
+.third{
+    border:5px solid rgb(255, 2, 217);
+    width:100vw;
+    height:20vw;
+    position: relative;
+    top: 30vw;
+ }
