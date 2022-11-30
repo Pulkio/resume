@@ -15,6 +15,29 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Test</title>
 
+      <div class="topnav" id="myTopnav">
+        <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Accueil</a>
+        <a id="tab2" onClick="redirectPages(this.id)" href="#">Formations</a>
+        <a id="tab3" onClick="redirectPages(this.id)" href="#">Compétences</a>
+        <a id="tab4" onClick="redirectPages(this.id)" href="#">Projets</a>
+        <a id="tab5" onClick="redirectPages(this.id)" href="#">Loisirs</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
+
       
       
 
@@ -42,28 +65,7 @@
             <div class="background">
 
 
-                <div class="topnav" id="myTopnav">
-                    <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Accueil</a>
-                    <a id="tab2" onClick="redirectPages(this.id)" href="#">Formations</a>
-                    <a id="tab3" onClick="redirectPages(this.id)" href="#">Compétences</a>
-                    <a id="tab4" onClick="redirectPages(this.id)" href="#">Projets</a>
-                    <a id="tab5" onClick="redirectPages(this.id)" href="#">Loisirs</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                      <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-            
-                <script>
-                    function myFunction() {
-                      var x = document.getElementById("myTopnav");
-                      if (x.className === "topnav") {
-                        x.className += " responsive";
-                      } else {
-                        x.className = "topnav";
-                      }
-                    }
-                </script>
-
+                
 
             
             <button id="lang" class="button-74" role="button">English</button>
