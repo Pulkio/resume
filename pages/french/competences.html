@@ -1,154 +1,253 @@
 <html lang="en">
-    
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-  <head>
-    <link rel="stylesheet" href="../../css/background.css"> 
-    <link rel="stylesheet" href="../../css/menu3.css"> 
-    <link rel="stylesheet" href="../../css/title.css"> 
-    <link rel="stylesheet" href="../../css/buttonLang.css"> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
 
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Test</title>
+<head>
+  <link rel="stylesheet" href="../../css/background.css">
+  <link rel="stylesheet" href="../../css/menu3.css">
+  <link rel="stylesheet" href="../../css/title.css">
+  <link rel="stylesheet" href="../../css/buttonLang.css">
+  <link rel="stylesheet" href="../../css/competences.css">
 
-      <div class="topnav" id="myTopnav">
-          <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Accueil</a>
-          <a id="tab2" onClick="redirectPages(this.id)" href="#">Formations</a>
-          <a id="tab3" onClick="redirectPages(this.id)" href="#">Compétences</a>
-          <a id="tab4" onClick="redirectPages(this.id)" href="#">Projets</a>
-          <a id="tab5" onClick="redirectPages(this.id)" href="#">Loisirs</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+
+  <div class="topnav" id="myTopnav">
+    <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Accueil</a>
+    <a id="tab2" onClick="redirectPages(this.id)" href="#">Formations</a>
+    <a id="tab3" onClick="redirectPages(this.id)" href="#">Compétences</a>
+    <a id="tab4" onClick="redirectPages(this.id)" href="#">Projets</a>
+    <a id="tab5" onClick="redirectPages(this.id)" href="#">Loisirs</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+
+
+
+</head>
+
+
+<link rel="stylesheet" href="../../css/progresseBar.css">
+<link rel="stylesheet" href="../../css/circularBar.css">
+
+<script src="../../js/changePages.js"></script>
+
+
+<body>
+
+
+
+
+  <!-- Background & animion & navbar & title -->
+  <div class="container-fluid">
+    <!-- Background animtion-->
+    <div class="background">
+
+
+      <button id="lang" class="button-74" role="button">English</button>
+
+
+      <p class="popout">
+        <span>C</span>
+        <span>O</span>
+        <span>M</span>
+        <span>P</span>
+        <span>E</span>
+        <span>T</span>
+        <span>E</span>
+        <span>N</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+      </p>
+
+      <p style="font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Langages de programmation</p>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="cards">
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rstudio/rstudio-original.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+        </div>
       </div>
-  
-      <script>
-          function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-              x.className += " responsive";
-            } else {
-              x.className = "topnav";
-            }
-          }
-      </script>
-      
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <p style="font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Bases de données</p>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <div class="cards">
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" />
+        </div>
+
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <p style="font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Divers</p>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="cards">
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original-wordmark.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
+        </div>
+        <div class="card">
+          <img style="height: calc(2vw + 40px);"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" />
+        </div>
+
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <p style="font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Langues</p>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="cards">
+        <div class="card">
+          <p style="font-size:calc(1vw + 10px); text-align: center;">Français</p> 
+        </div>
+        <div class="card">
+          <p style="font-size:calc(1vw + 10px); text-align: center;">Anglais (TOEIC niveau C1)</p> 
+        </div>
+        <div class="card">
+          <p style="font-size:calc(1vw + 10px); text-align: center;">Espagnole (Bases)</p> 
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
 
 
 
-  </head>
-
-    
-    <link rel="stylesheet" href="../../css/progresseBar.css"> 
-    <link rel="stylesheet" href="../../css/circularBar.css"> 
-
-    <script src="../../js/changePages.js"></script>
-       
-
-    <body>   
 
 
 
 
-        <!-- Background & animion & navbar & title -->
-        <div class="container-fluid">
-        <!-- Background animtion-->
-            <div class="background">
-
-            
-            <button id="lang" class="button-74" role="button">English</button>
-          
-            
-            <p class="popout">
-                <span>C</span>
-                <span>O</span>
-                <span>M</span>
-                <span>P</span>
-                <span>E</span>
-                <span>T</span>
-                <span>E</span>   
-                <span>N</span>
-                <span>C</span>
-                <span>E</span>
-                <span>S</span>
-            </p>
 
 
-            <div class="container2">
-                <div class="col">
-                  <h2 class="titulo">Programación</h2>
-                  <ul class="skill">
-                    <li><span class="blueline html"></span><em>HTML</em></li>
-                    <li><span class="blueline css"></span><em>CSS</em></li>
-                    <li><span class="blueline php"></span><em>PHP</em></li>
-                    <li><span class="blueline javascript"></span><em>Javascript</em></li> 
-                    <li><span class="blueline jquery"></span><em>jQuery</em></li>
-                  </ul>
-                </div>
-                  <div class="col">
-                  <h2 class="plataformas titulo">Plataformas</h2>
-                  <ul class="skill">
-                    <li><span class="greenline wordpress"></span><em>Wordpress</em></li>
-                    <li><span class="greenline prestashop"></span><em>Prestashop</em></li>
-                    <li><span class="greenline joomla"></span><em>Joomla</em></li>
-                    <li><span class="greenline blogger"></span><em>Blogger</em></li>
-                    <li><span class="greenline tridion"></span><em>Tridion</em></li>
-                  </ul>
-                </div>
-                  <div class="col">
-                  <h2 class="programas titulo">Programas</h2>
-                  <ul class="skill">
-                    <li><span class="redline dreamweaver"></span><em>Dreamweaver</em></li>
-                    <li><span class="redline illustrator"></span><em>Illustrator</em></li>
-                    <li><span class="redline photoshop"></span><em>Photoshop</em></li>
-                    <li><span class="redline premiere"></span><em>Premiere</em></li>
-                    <li><span class="redline flash"></span><em>Flash</em></li>
-                  </ul>
-                </div>
-            </div>
-
-            
-            <div class="set-size charts-container">
-                <div class="pie-wrapper progress-30">
-                  <span class="label"><span class="smaller">Biomécanique</span></span>
-                  <div class="pie">
-                    <div class="left-side half-circle"></div>
-                    <div class="right-side half-circle"></div>
-                  </div>
-                </div>
-              
-                <div class="pie-wrapper progress-60">
-                  <span class="label">60<span class="smaller">%</span></span>
-                  <div class="pie">
-                    <div class="left-side half-circle"></div>
-                    <div class="right-side half-circle"></div>
-                  </div>
-                </div>
-              
-                <div class="pie-wrapper progress-90">
-                  <span class="label">90<span class="smaller">%</span></span>
-                  <div class="pie">
-                    <div class="left-side half-circle"></div>
-                    <div class="right-side half-circle"></div>
-                  </div>
-                </div>
-            </div>
-           
-              
-                
-        
-        </div>      
-
-        
-        <!--------------------------------------------------------------------------------------------------------------------------------->
-    </body>
-
-      
+  </div>
 
 
-       
+</body>
 
- 
+
+
+
+
+
+
 </html>

@@ -12,24 +12,24 @@ h2 {
   margin: 0 0 30px;
   text-align:center;
   color:#2187e7;
-  text-shadow: 1px 1px 5px #000, 0 0 10px #2187e7, 0 0 20px #2187e7;
-  background:#000;
+  /* text-shadow: 1px 1px 5px #000, 0 0 10px #2187e7, 0 0 20px #2187e7; */
+  background:transparent;
   border-radius:2px;
   border: 1px solid #2187e7;  
-  box-shadow: 0px 0px 50px -8px #2187e7;
+  /* box-shadow: 0px 0px 50px -8px #2187e7; */
 }
 h2.plataformas {
-  border: 1px solid #f200ff;  
-  box-shadow: 0px 0px 50px -8px #f200ff;
-  color: #f200ff;
-  text-shadow: 1px 1px 5px #000, 0 0 10px #f200ff, 0 0 20px #f200ff;
+  border: 1px solid #cfe957;  
+  /* box-shadow: 0px 0px 50px -8px #f200ff; */
+  color: #cfe957;
+  /* text-shadow: 1px 1px 5px #000, 0 0 10px #f200ff, 0 0 20px #f200ff; */
 }
 
 h2.programas {
-  border: 1px solid #FF4500;  
-  box-shadow: 0px 0px 50px -8px #FF4500;
-  color: #FF4500;
-  text-shadow: 1px 1px 5px #000, 0 0 10px #FF4500, 0 0 20px #FF4500;
+  border: 1px solid #282727;  
+  /* box-shadow: 0px 0px 50px -8px #FF4500; */
+  color: #282727;
+  /* text-shadow: 1px 1px 5px #000, 0 0 10px #FF4500, 0 0 20px #FF4500; */
 }
  
 .container2 {
