@@ -4,8 +4,9 @@
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Georgia, serif;
     box-sizing: border-box;
+    
   }
   .container-fluid{
     height: 100%;
@@ -16,7 +17,10 @@ body {
   }
   /* ============= Animation background ========= */
   .background {
-    background: linear-gradient(132deg, #1da3e7, #3adf63, #c1d84e);
+    /*background: linear-gradient(132deg, #76B947, #B1D8B7, #94C973);*/
+    background: linear-gradient(132deg, #29A0B1, #98D7C2, #29A0B1);
+
+    
     background-size: 400% 400%;
     animation: Gradient 15s ease infinite;
     position: relative;

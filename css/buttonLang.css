@@ -1,8 +1,9 @@
 
 /* CSS */
 .button-74 {
-  background-color: #fcfbf9;
-  border: 2px solid #422800;
+  /* background-color: #fcfbf9; */
+   background-color: #fcfbf9;
+  border: 3px solid #422800;
   border-radius: 30px;
   box-shadow: #422800 4px 4px 0 0;
   color: #422800;
@@ -11,8 +12,8 @@
   font-weight: 600;
   font-size: 18px;
   padding: 0 18px;
-  line-height: 50px;
-  float: left;
+  line-height: 40px;
+  float: right;
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
@@ -20,12 +21,12 @@
   position: sticky;
   z-index: 9999;
   top:10;
-  left:10;
+  right:10;
   
 }
 
 .button-74:hover {
-  background-color: rgb(120, 247, 81);
+  background-color: #04AA6D;
 }
 
 .button-74:active {

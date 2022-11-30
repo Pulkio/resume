@@ -1,4 +1,4 @@
-
+/*
 .container2 {
     height: 100%;
     display: flex;
@@ -8,7 +8,6 @@ a {
     display: block;
     margin: auto;
     padding: 1rem 1.25rem;
-    font-family: sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
     color: white;
@@ -33,6 +32,45 @@ a:hover {
     color: #2d2d2d;
 }
 a:hover:after {
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+*/
+
+.container2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+a2 {
+    display: block;
+    margin: auto;
+    padding: 1rem 1.25rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    z-index: 1;
+}
+a2:after {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 1.25rem;
+    left: 1.25rem;
+    background-color: rgb(253, 237, 237);
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    transform-origin: bottom center;
+    z-index: -1;
+}
+a2:hover {
+    color: #000000;
+}
+a2:hover:after {
     right: 0;
     left: 0;
     height: 100%;

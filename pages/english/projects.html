@@ -2,29 +2,54 @@
     
    
     
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <head>
+      <link rel="stylesheet" href="../../css/background.css"> 
+      <link rel="stylesheet" href="../../css/menu3.css"> 
+      <link rel="stylesheet" href="../../css/title.css"> 
+      <link rel="stylesheet" href="../../css/buttonLang.css"> 
+  
+  
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Test</title>
+  
+        <div class="topnav" id="myTopnav">
+            <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Home</a>
+            <a id="tab2" onClick="redirectPages(this.id)" href="#">Studies</a>
+            <a id="tab3" onClick="redirectPages(this.id)" href="#">Skills</a>
+            <a id="tab4" onClick="redirectPages(this.id)" href="#">Projects</a>
+            <a id="tab5" onClick="redirectPages(this.id)" href="#">Hobbies</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+        
+  
+  
+  
     </head>
 
     
-    
-    
 
- 
-
-        <!--A mettre dans chaque pages---------------------------------------------------------------------------------------------------------------->
-
-    <link rel="stylesheet" href="../../css/background.css"> 
-    <link rel="stylesheet" href="../../css/menu.css"> 
-    <link rel="stylesheet" href="../../css/buttonLang.css"> 
-    <link rel="stylesheet" href="../../css/title.css"> 
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <script src="../../js/changePages.js"></script>
        
 
-    <body onload="updateMenuLoad()">   
+    <body>   
 
 
 
@@ -33,17 +58,10 @@
         <div class="container-fluid">
         <!-- Background animtion-->
             <div class="background">
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
 
             
             <button id="lang" class="button-74" role="button">Français</button>
-            <br>
-            <br>
-            <br>
+
             
             <p class="popout">
                 <span>P</span>
@@ -59,28 +77,6 @@
             </div>    
         </div>      
 
-        <input type="checkbox" id="active">
-        <label for="active" class="menu-btn"><span></span></label>
-        <label for="active" class="close"></label>
-        <div class="wrapper">
-        <ul>
-            <li><a id="tab1" onClick="redirectPages(this.id)" href="#">Accueil</a></li>
-            <li><a id="tab2" onClick="redirectPages(this.id)" href="#">Formations</a></li>
-            <li><a id="tab3" onClick="redirectPages(this.id)" href="#">Compétences</a></li>
-            <li><a id="tab4" onClick="redirectPages(this.id)" href="#">Projets</a></li>
-            <li><a id="tab5" onClick="redirectPages(this.id)" href="#">Loisirs</a></li>
-            <li><a id="tab6" onClick="redirectPages(this.id)" href="#">Contact</a></li>
-        </ul>
-        </div>
-        <div class="content">
-            <div class="title">
-        Fullscreen Overlay Navigation Bar</div>
-        <p>
-        (Hamburger Menu-2)</p>
-        </div>
-
-        
-        <!--------------------------------------------------------------------------------------------------------------------------------->
     </body>
 
       

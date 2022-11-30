@@ -2,32 +2,57 @@
     
    
     
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Test</title>
-    </head>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    
-    
-
- 
-
-        <!--A mettre dans chaque pages---------------------------------------------------------------------------------------------------------------->
-
+  <head>
     <link rel="stylesheet" href="../../css/background.css"> 
-    <link rel="stylesheet" href="../../css/menu.css"> 
-    <link rel="stylesheet" href="../../css/buttonLang.css"> 
+    <link rel="stylesheet" href="../../css/menu3.css"> 
     <link rel="stylesheet" href="../../css/title.css"> 
+    <link rel="stylesheet" href="../../css/buttonLang.css"> 
+
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Test</title>
+
+      <div class="topnav" id="myTopnav">
+          <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Accueil</a>
+          <a id="tab2" onClick="redirectPages(this.id)" href="#">Formations</a>
+          <a id="tab3" onClick="redirectPages(this.id)" href="#">Compétences</a>
+          <a id="tab4" onClick="redirectPages(this.id)" href="#">Projets</a>
+          <a id="tab5" onClick="redirectPages(this.id)" href="#">Loisirs</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+  
+      <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+      </script>
+      
+
+
+
+  </head>
+
+    
+    
+    
     <link rel="stylesheet" href="../../css/link.css"> 
-    <link rel="stylesheet" href="../../css/projectTimeline.css"> 
+    <link rel="stylesheet" href="../../css/timeline.css"> 
     
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <script src="../../js/changePages.js"></script>
        
 
-    <body onload="updateMenuLoad()">   
+    <body>   
 
 
 
@@ -36,17 +61,10 @@
         <div class="container-fluid">
         <!-- Background animtion-->
             <div class="background">
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
 
             
             <button id="lang" class="button-74" role="button">English</button>
-            <br>
-            <br>
-            <br>
+        
 
             <p class="popout">
                 <span>P</span>
@@ -61,77 +79,80 @@
       
 
             
-            <div class="container">
-                <div class="timeline">
-                    <div class="timeline-container primary">
-                        <div class="timeline-icon">
-                            <i class="far fa-grin-wink"></i>
+            <section id=timeline>
+                <h1>A Flexbox Timeline</h1>
+                <p class="leader">All cards must be the same height and width for space calculations on large screens.</p>
+                <div class="demo-card-wrapper">
+                    <div class="demo-card demo-card--step1">
+                        <div class="head">
+                            <div class="number-box">
+                                <span>01</span>
+                            </div>
+                            <h2><span class="small">Subtitle</span> Technology</h2>
                         </div>
-                        <div class="timeline-body">
-                            <h4 class="timeline-title"><span class="badge">R Shiny</span></h4>
+                        <div class="body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
                             <a href="http://elwin.vdhazel.com/" target="_blank">Application Shiny montre Garmin</a>
                             <br>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, 
                                 officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
-                                
-                                    
-                                  
-                                
-                            <p class="timeline-subtitle">1 Hours Ago</p>
                         </div>
                     </div>
-                    <div class="timeline-container danger">
-                        <div class="timeline-icon">
-                            <i class="far fa-grin-hearts"></i>
+            
+                    <div class="demo-card demo-card--step2">
+                        <div class="head">
+                            <div class="number-box">
+                                <span>02</span>
+                            </div>
+                            <h2><span class="small">Subtitle</span> Confidence</h2>
                         </div>
-                        <div class="timeline-body">
-                            <h4 class="timeline-title"><span class="badge">Danger</span></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
-                            <p class="timeline-subtitle">2 Hours Ago</p>
-                         </div>
-                    </div>
-                    <div class="timeline-container success">
-                        <div class="timeline-icon">
-                            <i class="far fa-grin-tears"></i>
-                        </div>
-                        <div class="timeline-body">
-                            <h4 class="timeline-title"><span class="badge">Success</span></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
-                            <p class="timeline-subtitle">6 Hours Ago</p>
+                        <div class="body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                            <img src="http://placehold.it/1000x500" alt="Graphic">
                         </div>
                     </div>
-                    <div class="timeline-container warning">
-                        <div class="timeline-icon">
-                            <i class="far fa-grimace"></i>
+            
+                    <div class="demo-card demo-card--step3">
+                        <div class="head">
+                            <div class="number-box">
+                                <span>03</span>
+                            </div>
+                            <h2><span class="small">Subtitle</span> Adaptation</h2>
                         </div>
-                        <div class="timeline-body">
-                            <h4 class="timeline-title"><span class="badge">Warning</span></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
-                            <p class="timeline-subtitle">1 Day Ago</p>
-                        </div>
-                    </div>
-                    <div class="timeline-container">
-                        <div class="timeline-icon">
-                            <i class="far fa-grin-beam-sweat"></i>
-                        </div>
-                        <div class="timeline-body">
-                            <h4 class="timeline-title"><span class="badge">Secondary</span></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
-                            <p class="timeline-subtitle">3 Days Ago</p>
+                        <div class="body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                            <img src="http://placehold.it/1000x500" alt="Graphic">
                         </div>
                     </div>
-                    <div class="timeline-container info">
-                        <div class="timeline-icon">
-                            <i class="far fa-grin"></i>
+            
+                    <div class="demo-card demo-card--step4">
+                        <div class="head">
+                            <div class="number-box">
+                                <span>04</span>
+                            </div>
+                            <h2><span class="small">Subtitle</span> Consistency</h2>
                         </div>
-                        <div class="timeline-body">
-                            <h4 class="timeline-title"><span class="badge">Info</span></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam necessitatibus numquam earum ipsa fugiat veniam suscipit, officiis repudiandae, eum recusandae neque dignissimos. Cum fugit laboriosam culpa, repellendus esse commodi deserunt.</p>
-                            <p class="timeline-subtitle">4 Days Ago</p>
+                        <div class="body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                            <img src="http://placehold.it/1000x500" alt="Graphic">
                         </div>
                     </div>
+            
+                    <div class="demo-card demo-card--step5">
+                        <div class="head">
+                            <div class="number-box">
+                                <span>05</span>
+                            </div>
+                            <h2><span class="small">Subtitle</span> Conversion</h2>
+                        </div>
+                        <div class="body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+                            <img src="http://placehold.it/1000x500" alt="Graphic">
+                        </div>
+                    </div>
+                
                 </div>
-            </div>
+            </section>
 
             
            
@@ -141,28 +162,7 @@
    
         </div>      
 
-        <input type="checkbox" id="active">
-        <label for="active" class="menu-btn"><span></span></label>
-        <label for="active" class="close"></label>
-        <div class="wrapper">
-        <ul>
-            <li><a id="tab1" onClick="redirectPages(this.id)" href="#">Accueil</a></li>
-            <li><a id="tab2" onClick="redirectPages(this.id)" href="#">Formations</a></li>
-            <li><a id="tab3" onClick="redirectPages(this.id)" href="#">Compétences</a></li>
-            <li><a id="tab4" onClick="redirectPages(this.id)" href="#">Projets</a></li>
-            <li><a id="tab5" onClick="redirectPages(this.id)" href="#">Loisirs</a></li>
-            <li><a id="tab6" onClick="redirectPages(this.id)" href="#">Contact</a></li>
-        </ul>
-        </div>
-        <div class="content">
-            <div class="title">
-        Fullscreen Overlay Navigation Bar</div>
-        <p>
-        (Hamburger Menu-2)</p>
-        </div>
-
-        
-        <!--------------------------------------------------------------------------------------------------------------------------------->
+    
     </body>
 
       

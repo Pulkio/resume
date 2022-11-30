@@ -1,0 +1,66 @@
+
+.hello {
+    margin-left: 4vw;
+    margin-top: 4vw;
+}
+
+.hello a {
+    font-size: 4vw;
+    color: #000000;
+    text-decoration: none;
+}
+
+.welcome_home {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 3vw;
+}
+
+
+
+
+
+
+a:hover span {
+    transform: translateX(0);
+    cursor: default
+}
+
+
+
+a:hover span::before {
+    transform: translateX(0);
+}
+
+.welcome_home a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#home {
+    height: 100vh;
+}
+
+
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+.Parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.child1 {
+    width: 50%;
+    height: 100vh;
+    text-align: left;
+    color: white;
+}
+
+.child2 {
+    width: 50%;
+    color: green;
+    height: 100vh;
+}
