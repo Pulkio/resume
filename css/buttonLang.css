@@ -19,7 +19,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   position: sticky;
-  z-index: 9999;
+  z-index: 10001;
   top:10;
   right:10;
   
