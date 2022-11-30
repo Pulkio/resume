@@ -6,22 +6,15 @@ body{
     color: rgb(0, 0, 0)
   }
   
-  .photo{
-    position: relative;
-    top: 15vw;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    display: block;
-  }
+
   
   .photo img{
     border-radius: 50%;
-    width: 20vw;
-    height: 20vw;
-    object-fit: cover;
-    /*filter: grayscale(100%) contrast(120%);*/
+    width: 50%;
+    height: auto;
+
     box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
-    display: block;
+
     transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
     margin-top: -10px;
   }

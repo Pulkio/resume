@@ -1,145 +1,285 @@
 <html lang="en">
 
-    <!-- <link rel="stylesheet" href="./css/menu3.css">  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <head>
-      <link rel="stylesheet" href="./css/background.css"> 
-      <link rel="stylesheet" href="./css/menu3.css"> 
-      <link rel="stylesheet" href="./css/title.css"> 
-      <link rel="stylesheet" href="./css/buttonLang.css"> 
+  <!-- <link rel="stylesheet" href="./css/menu3.css">  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <head>
+    <link rel="stylesheet" href="./css/background.css">
+    <link rel="stylesheet" href="./css/menu3.css">
+    <link rel="stylesheet" href="./css/title.css">
+    <link rel="stylesheet" href="./css/buttonLang.css">
 
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
 
-        <div class="topnav" id="myTopnav">
-            <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Accueil</a>
-            <a id="tab2" onClick="redirectPages(this.id)" href="#">Formations</a>
-            <a id="tab3" onClick="redirectPages(this.id)" href="#">Compétences</a>
-            <a id="tab4" onClick="redirectPages(this.id)" href="#">Projets</a>
-            <a id="tab5" onClick="redirectPages(this.id)" href="#">Loisirs</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
+    <div class="topnav" id="myTopnav">
+      <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Accueil</a>
+      <a id="tab2" onClick="redirectPages(this.id)" href="#">Formations</a>
+      <a id="tab3" onClick="redirectPages(this.id)" href="#">Compétences</a>
+      <a id="tab4" onClick="redirectPages(this.id)" href="#">Projets</a>
+      <a id="tab5" onClick="redirectPages(this.id)" href="#">Loisirs</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+
+
+
+  </head>
+
+
+
+
+
+  <link rel="stylesheet" href="./css/guillaume2.css">
+  <link rel="stylesheet" href="./css/texte.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+
+  <script src="./js/changePages.js"></script>
+
+
+
+  <body>
+
+
+
+
+    <!-- Background & animion & navbar & title -->
+    <div class="container-fluid">
+      <!-- Background animtion-->
+      <div class="background">
+        <button id="lang" class="button-74" role="button">English</button> <!-- A METTRE SUR CHAQUE PAGES-->
+
+
+        <p class="popout">
+          <span>A</span>
+          <span>C</span>
+          <span>C</span>
+          <span>U</span>
+          <span>E</span>
+          <span>I</span>
+          <span>L</span>
+        </p>
+
+
+        
+        <!--
+        <div class="wrapper">
+
+           <div class="item1">
+            <div id="home">
+              <div class="hello">
+                <a href="#"><span data-content="Bonjour," aria-hidden="true"></span>Bonjour, <br></a>
+                <a href="#"><span data-content="je suis Guillaume COBAT" aria-hidden="true"></span>je suis Guillaume
+                  COBAT<br></a>
+              </div>
+
+              <div class="welcome_home">
+                <a id="welcome" href="#"><span data-content="Bienvenue sur mon portfolio"
+                    aria-hidden="true"></span>Bienvenue sur mon portfolio !</a>
+                <div style="height: 1em;"></div>
+
+              </div>
+            </div>
+          <div>
+
+
+
+
+          <div class="item2">
+
+            <a href="#" class="photo">
+              <img src="../resume/images/guillaume2.jpg" />
+                <div class="glow-wrap">
+                  <i class="glow"></i>
+                </div>
             </a>
-        </div>
-    
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-        </script>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <div class="raw">
+
+              <div class="social-buttons">
+
+                <div class="popup">
+                  <a class="social-button social-button--facebook" aria-label="Facebook" target="_blank"
+                    onclick="popUpFunc2()">
+                    <span class="popuptext" id="myPopup2">guillaume.cobat@outlook.com</span>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+
+                <br>
+
+
+                <a href="https://www.linkedin.com/in/guillaume-cobat-7ab347195/"
+                  class="social-button social-button--linkedin" aria-label="LinkedIn" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <br>
+
+
+                <a href="https://github.com/Pulkio" class="social-button social-button--github" aria-label="GitHub"
+                  target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+
+                <br>
+
+                <div class="popup">
+                  <a class="social-button social-button--twitter" aria-label="Twitter" target="_blank"
+                    onclick="popUpFunc()">
+                    <span class="popuptext" id="myPopup">07/70/06/34/99</span>
+                    <i class="fa fa-phone"></i>
+                  </a>
+                </div>
+
+
+
+              </div>
+
+
+
+            </div>
+
+
+
+          </div> 
+
+          <div class="item1">
+            <h1>JE SUIS DANS ITEM 1</h1>
+          </div>
+
+          <div class="item2">
+            <h1>JE SUIS DANS ITEM 2</h1>
+          </div>
+
+
+
+
+
+
+
+
+        </div> -->
+
         
 
+        <div class="cards">
+          <div class="card">
+            
+            
+            <h1>Bonjour,<h1>
+            <br>
+            <h2>Je suis Guillaume COBAT</h2>
+            <br>
+            <br>
+            <h4>Bienvenue sur mon portfolio !</h4>
+           
+            
+          </div>
 
 
-    </head>
+          <div class="card">
 
-  
-    
-
-
-    <!--A mettre dans chaque pages---------------------------------------------------------------------------------------------------------------->
-
-  
-    
-    
-    
-    
-    <link rel="stylesheet" href="./css/guillaume2.css"> 
-    <link rel="stylesheet" href="./css/texte.css"> 
-    <link rel="stylesheet" href="./css/home.css"> 
-    
-    
-    
-    <script src="./js/changePages.js"></script>
- 
-       
-
-    <body>   
-
-
-
-
-        <!-- Background & animion & navbar & title -->
-        <div class="container-fluid">
-        <!-- Background animtion-->
-            <div class="background">
-              <button id="lang" class="button-74" role="button">English</button> <!-- A METTRE SUR CHAQUE PAGES-->
-
-       
-                <p class="popout">
-                    <span>A</span>
-                    <span>C</span>
-                    <span>C</span>
-                    <span>U</span>
-                    <span>E</span>
-                    <span>I</span>
-                    <span>L</span>   
-                </p>
-
-
-                <div class="Parent">
-                    <div class="child1">
-
-                        <div id="home">
-                            <div class="hello">
-                                <a href="#"><span data-content="Bonjour," aria-hidden="true"></span>Bonjour, <br></a>
-                                <a href="#"><span data-content="je suis Guillaume COBAT" aria-hidden="true"></span>je suis Guillaume COBAT<br></a>
-                            </div>
-                    
-                            <div class="welcome_home">
-                                <a id="welcome" href="#"><span data-content="Bienvenue sur mon portfolio" aria-hidden="true"></span>Bienvenue sur mon portfolio !</a>
-                                <div style="height: 1em;"></div>
-
-                            </div>
-                        </div>
-
-                        
-                    </div>
-                    <div class="child2">
-
-                        
-                            <a href="#" class="photo">
-                                <img src="../resume/images/guillaume2.jpg" />
-                              <div class="glow-wrap">
-                                <i class="glow"></i>
-                              </div>
-                            </a>
-                       
-                    </div>
+            <a href="#" class="photo">
+              <img src="../resume/images/guillaume2.jpg" />
+                <div class="glow-wrap">
+                  <i class="glow"></i>
                 </div>
-                
-                                    
-                
+            </a>
 
-                 
-                
 
-                    
+            <div class="raw">
 
-                             
-                    
+              <div class="social-buttons">
 
-                 
-                 
-                        
-                
-            </div>    
-        </div> 
+                <div class="popup">
+                  <a class="social-button social-button--facebook" aria-label="Facebook" target="_blank"
+                    onclick="popUpFunc2()">
+                    <span class="popuptext" id="myPopup2">guillaume.cobat@outlook.com</span>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
 
-    </body>
+                <br>
+
+
+                <a href="https://www.linkedin.com/in/guillaume-cobat-7ab347195/"
+                  class="social-button social-button--linkedin" aria-label="LinkedIn" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <br>
+
+
+                <a href="https://github.com/Pulkio" class="social-button social-button--github" aria-label="GitHub"
+                  target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+
+                <br>
+
+                <div class="popup">
+                  <a class="social-button social-button--twitter" aria-label="Twitter" target="_blank"
+                    onclick="popUpFunc()">
+                    <span class="popuptext" id="myPopup">07/70/06/34/99</span>
+                    <i class="fa fa-phone"></i>
+                  </a>
+                </div>
+
+
+
+              </div>
+
+
+
+            </div>
 
       
+          </div>
+        </div>
 
 
-       
 
- 
+      </div>
+    </div>
+
+  </body>
+
+
+
+
+
+
+
 </html>
