@@ -1,0 +1,46 @@
+.wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+.one {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+  
+.two {
+    right: 10px;
+    grid-column: 3 / 7;
+    grid-row: 1;
+} 
+
+.three {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+  
+.four {
+    grid-column: 3 / 7;
+    grid-row: 2;
+} 
+
+.five {
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+  
+.six {
+    grid-column: 3 / 7;
+    grid-row: 3;
+} 
+
+
+
+
+.imgLoisir {
+    border-radius: 50%;
+    width: calc(5vw + 100px);
+}
+

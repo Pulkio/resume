@@ -4,6 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 10000;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* Permet d'enlever la bordure blanche tout autour de l'ecran*/
