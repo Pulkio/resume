@@ -10,7 +10,7 @@
     display: block;
     margin: auto;
     padding: 1rem 1.25rem;
-    font-size: 1.5rem;
+    font-size: calc(1vw + 7px);
     text-decoration: none;
     color: rgb(0, 0, 0);
     position: relative;
@@ -25,7 +25,7 @@
     bottom: 0;
     right: 1.25rem;
     left: 1.25rem;
-    background-color: #46b8e9;
+    background-color: #a9dbde;
     transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
     transform-origin: bottom center;
     z-index: -1;
@@ -46,7 +46,7 @@
     display: block;
     margin: auto;
     padding: 1rem 1.25rem;
-    font-size: 1.5rem;
+    font-size: calc(1vw + 7px);
     text-decoration: none;
     color: rgb(0, 0, 0);
     position: relative;
@@ -61,7 +61,7 @@
     bottom: 0;
     right: 1.25rem;
     left: 1.25rem;
-    background-color: rgb(118, 184, 237);
+    background-color: #69dea7;
     transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
     transform-origin: bottom center;
     z-index: -1;
@@ -70,6 +70,45 @@
     color: #000000;
 }
 .myLinkGreen:hover:after {
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.myLinkRed {
+    display: block;
+    margin: auto;
+    padding: 1rem 1.25rem;
+    font-size: calc(1vw + 7px);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    z-index: 1;
+}
+.myLinkRed:after {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 1.25rem;
+    left: 1.25rem;
+    background-color: #da6363;
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    transform-origin: bottom center;
+    z-index: -1;
+}
+.myLinkRed:hover {
+    color: #000000;
+}
+.myLinkRed:hover:after {
     right: 0;
     left: 0;
     height: 100%;
