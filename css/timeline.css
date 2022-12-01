@@ -52,7 +52,7 @@ body {
 #timeline {
     padding: 100px 0;
     
-    border-top: 1px solid rgba(191, 191, 191, 0.4);
+
     border-bottom: 1px solid rgba(191, 191, 191, 0.4);
 }
 #timeline h1 {
@@ -114,7 +114,7 @@ body {
 }
 @media (min-width: 1000px) {
     #timeline .demo-card {
-        max-width: 450px;
+        max-width: 470px;
         height: 400px;
         margin: 90px;
         margin-top: 45px;
