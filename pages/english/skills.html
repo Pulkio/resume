@@ -1,83 +1,281 @@
+
 <html lang="en">
-    
-   
-    
-     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <head>
-      <link rel="stylesheet" href="../../css/background.css"> 
-      <link rel="stylesheet" href="../../css/menu3.css"> 
-      <link rel="stylesheet" href="../../css/title.css"> 
-      <link rel="stylesheet" href="../../css/buttonLang.css"> 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   
   
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Test</title>
+  <head>
+    <link rel="stylesheet" href="../../css/background.css">
+    <link rel="stylesheet" href="../../css/menu3.css">
+    <link rel="stylesheet" href="../../css/title.css">
+    <link rel="stylesheet" href="../../css/buttonLang.css">
+    <link rel="stylesheet" href="../../css/competences.css">
   
-        <div class="topnav" id="myTopnav">
-            <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Home</a>
-            <a id="tab2" onClick="redirectPages(this.id)" href="#">Studies</a>
-            <a id="tab3" onClick="redirectPages(this.id)" href="#">Skills</a>
-            <a id="tab4" onClick="redirectPages(this.id)" href="#">Projects</a>
-            <a id="tab5" onClick="redirectPages(this.id)" href="#">Hobbies</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+  
+    <div class="topnav" id="myTopnav">
+      <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Home</a>
+      <a id="tab2" onClick="redirectPages(this.id)" href="#">Studies</a>
+      <a id="tab3" onClick="redirectPages(this.id)" href="#">Skills</a>
+      <a id="tab4" onClick="redirectPages(this.id)" href="#">Projects</a>
+      <a id="tab5" onClick="redirectPages(this.id)" href="#">Hobbies</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+  
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  
+  
+  
+  
+  </head>
+  
+  
+  <link rel="stylesheet" href="../../css/progresseBar.css">
+  <link rel="stylesheet" href="../../css/circularBar.css">
+  
+  <script src="../../js/changePages.js"></script>
+  
+  
+  <body scroll="no" style="overflow: hidden;">
+  
+  
+  
+  
+    <!-- Background & animion & navbar & title -->
+    <div class="container-fluid">
+      <!-- Background animtion-->
+      <div class="background">
+  
+  
+        <button id="lang" class="button-74" role="button">Français</button>
+  
+  
+        <p class="popout">
+          <span>S</span>
+          <span>K</span>
+          <span>I</span>
+          <span>L</span>
+          <span>L</span>
+          <span>S</span>
+      </p>
+  
+        <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Programming languages</p>
+  
+        <br>
+        <br>
+        <br>
+        <br>
+  
+        <div class="cards">
+          <div class="card blue">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+          </div>
+          <div class="card blue">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+          </div>
+          <div class="card blue">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+          </div>
+          <div class="card blue">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+          </div>
+          <div class="card blue">
+            <img style="height: calc(2vw + 40px);" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rstudio/rstudio-original.svg" />
+          </div>
+          <div class="card blue">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+          </div>
+          <div class="card blue">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+          </div>
         </div>
-    
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-        </script>
+  
+        <br>
+        <br>
+        <br>
+        <br>
+  
+        <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Databases</p>
+  
+        <br>
+        <br>
+        <br>
+        <br>
+  
+  
+        <div class="cards">
+          <div class="card blue">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+          </div>
+          <div class="card blue">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+          </div>
+          <div class="card blue">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" />
+          </div>
+  
+        </div>
+  
+        <br>
+        <br>
+        <br>
+        <br>
+  
+  
+        <p style=" font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Miscellanous</p>
+  
+        <br>
+        <br>
+        <br>
+        <br>
+  
+        <div class="cards">
+          <div class="card green">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+          </div>
+          <div class="card green">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original-wordmark.svg" />
+          </div>
+          <div class="card green">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
+          </div>
+          <div class="card green">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
+          </div>
+          <div class="card green">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" />
+          </div>
+          <div class="card green">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+          </div>
+          <div class="card green">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" />
+          </div>
+          <div class="card green">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" />
+          </div>
+          <div class="card green">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
+          </div>
+          <div class="card green">
+            <img style="height: calc(2vw + 40px);"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" />
+          </div>
+  
+        </div>
+  
+        <br>
+        <br>
+        <br>
+        <br>
+  
+        <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Languages</p>
+  
+        <br>
+        <br>
+        <br>
+        <br>
+  
+        <div class="cards">
+          <div class="card red">
+            <p style="font-size:calc(1vw + 10px); text-align: center;">French</p> 
+          </div>
+          <div class="card red">
+            <p style="font-size:calc(1vw + 10px); text-align: center;">English (TOEIC level C1)</p> 
+          </div>
+          <div class="card red">
+            <p style="font-size:calc(1vw + 10px); text-align: center;">Spanish (Basis)</p> 
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+  
+        <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Knowledge of sport</p>
+  
+        <br>
+        <br>
+        <br>
+        <br>
+  
+        <div class="cards">
+          <div class="card red">
+            <p style="font-size:calc(1vw + 10px); text-align: center;">Exercise Physiology</p> 
+          </div>
+          <div class="card red">
+            <p style="font-size:calc(1vw + 10px); text-align: center;">Biomechanics</p> 
+          </div>
+        </div>
+  
+        <br>
+        <br>
+        <br>
+        <br>
+  
+  
+        <div class="cards">
+          <div class="card">
+            <br>
+            <br>
+            <br>
+          </div>
         
-    </head>
+        </div>
+      </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    </div>
+  
+  
+  </body>
+  
+  
+  
+  
+  
+  
+  
+  </html>
 
-    
-
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <script src="../../js/changePages.js"></script>
-       
-
-    <body>   
-
-
-
-
-        <!-- Background & animion & navbar & title -->
-        <div class="container-fluid">
-        <!-- Background animtion-->
-            <div class="background">
-
-            
-            <button id="lang" class="button-74" role="button">Français</button>
-
-            
-            <p class="popout">
-                <span>S</span>
-                <span>K</span>
-                <span>I</span>
-                <span>L</span>
-                <span>L</span>
-                <span>S</span>
-            </p>
-                
-            </div>    
-        </div>      
-
-    </body>
-
-      
-
-
-       
-
- 
-</html>

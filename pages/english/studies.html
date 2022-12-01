@@ -2,53 +2,58 @@
     
    
     
-   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <head>
-      <link rel="stylesheet" href="../../css/background.css"> 
-      <link rel="stylesheet" href="../../css/menu3.css"> 
-      <link rel="stylesheet" href="../../css/title.css"> 
-      <link rel="stylesheet" href="../../css/buttonLang.css"> 
+  <head>
+    <link rel="stylesheet" href="../../css/background.css"> 
+    <link rel="stylesheet" href="../../css/menu3.css"> 
+    <link rel="stylesheet" href="../../css/title.css"> 
+    <link rel="stylesheet" href="../../css/buttonLang.css"> 
+    <link rel="stylesheet" href="../../css/box.css"> 
+
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Test</title>
+
+      <div class="topnav" id="myTopnav">
+        <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Home</a>
+        <a id="tab2" onClick="redirectPages(this.id)" href="#">Studies</a>
+        <a id="tab3" onClick="redirectPages(this.id)" href="#">Skills</a>
+        <a id="tab4" onClick="redirectPages(this.id)" href="#">Projects</a>
+        <a id="tab5" onClick="redirectPages(this.id)" href="#">Hobbies</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
   
-  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Test</title>
-  
-        <div class="topnav" id="myTopnav">
-            <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Home</a>
-            <a id="tab2" onClick="redirectPages(this.id)" href="#">Studies</a>
-            <a id="tab3" onClick="redirectPages(this.id)" href="#">Skills</a>
-            <a id="tab4" onClick="redirectPages(this.id)" href="#">Projects</a>
-            <a id="tab5" onClick="redirectPages(this.id)" href="#">Hobbies</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
+      <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
             }
-        </script>
-        
-  
-  
-  
-    </head>
+          }
+      </script>
+      
+
+
+
+  </head>
 
     
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/texte.css"> 
+    <!-- <link rel="stylesheet" href="../../css/timeline.css">  -->
+    <link rel="stylesheet" href="../../css/link.css"> 
+    <link rel="stylesheet" href="../../css/formations.css"> 
+
     <script src="../../js/changePages.js"></script>
        
 
-    <body>   
+    <body scroll="no" style="overflow: hidden;">   
 
 
 
@@ -58,24 +63,402 @@
         <!-- Background animtion-->
             <div class="background">
 
-
             
-            <button id="lang" class="button-74" role="button">Français</button>
-
-
+              <button id="lang" class="button-74" role="button">Français</button>
+       
             <p class="popout">
-                <span>S</span>
-                <span>T</span>
-                <span>U</span>
-                <span>D</span>
-                <span>I</span>
-                <span>E</span>
-                <span>S</span>   
-            </p>
-                
-            </div>    
-        </div>      
+              <span>S</span>
+              <span>T</span>
+              <span>U</span>
+              <span>D</span>
+              <span>I</span>
+              <span>E</span>
+              <span>S</span>   
+          </p>
 
+
+            <!--------------------------------------------------------------------- Actuellement -------------------------------------------------------------------------------------------------------------->
+
+
+            <div class="cards">
+
+                <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Currently</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="cards">
+                
+                <card>
+                    <div class="order-container">
+                        <div class="order-blueheader">
+                            <span style="font-size:calc(1vw + 12px)">Master's degree of sport and technology</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">2022 - 2024</span>  <span></span><span style="font-size:calc(0.8vw + 9px)"> Digisport </span> </h2>
+                            <span style="font-size:calc(0.7vw + 9px)">Rennes</span>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <h3 style="font-size:calc(0.7vw + 8px); text-align: center;"> To find out more about my master's degree, click on the logo! </h3>
+                            <br>
+                            <br>
+                            <a href="https://digisport.univ-rennes.fr/" target="_blank">
+                            <img style="width: calc(5vw + 80px); display: block; margin-left: auto; margin-right: auto;"
+                                src="../../images/digisport.jpg" />
+                            </a>
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+
+                
+            </div> 
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <!--------------------------------------------------------------------- Annee 2019 - 2021 -------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+            <!--------------------------------------------------------------------- Annee 2021 - 2022 -------------------------------------------------------------------------------------------------------------->
+
+
+            <div class="cards">
+
+                <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;"> 2021 - 2022</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="cards">
+                
+                <card>
+                    <div class="order-container">
+                        <div class="order-blueheader">
+                            <span style="font-size:calc(1vw + 12px)">IT Bachelor's degree</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">2021 - 2022</span>  <span></span><span style="font-size:calc(0.8vw + 9px)"> University of South Britanny </span> </h2>
+                            <span style="font-size:calc(0.7vw + 9px)">Vannes</span>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <h3 style="font-size:calc(0.7vw + 8px); text-align: center;"> To find out more about my university, click on the logo!</h3>
+                            <br>
+                            <br>
+                            <a href="https://www.univ-ubs.fr/fr/index.html" target="_blank">
+                            <img style="width: calc(5vw + 80px); display: block; margin-left: auto; margin-right: auto;"
+                                src="../../images/ubs.png" />
+                            </a>
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                <card>
+                    <div class="order-container">
+                        <div class="order-redheader">
+                            <span style="font-size:calc(1vw + 12px)">Community service</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">01/01/2022 - 07/31/2022</span>  <span></span><span style="font-size:calc(0.8vw + 9px)">Brittany League of University Sport</span> </h2>
+                            <span style="font-size:calc(0.7vw + 9px)">Rennes</span>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <h3 style="font-size:calc(0.7vw + 8px); text-align: center;"> Tasks performed : </h3>
+                            <br>
+                            <p style="font-size:calc(0.5vw + 7px); text-align: center;">Structure university sport within the University of South Britanny. Set up several 
+                              sporting events / competitions for Breton students.
+                            </p>
+                        </p>
+                            <br>
+                            <br>
+                            <a href="https://sport-u-bretagne.com/" target="_blank">
+                            <img style="width: calc(1.5vw + 40px); display: block; margin-left: auto; margin-right: auto;"
+                                src="../../images/ffsu.png" />
+                            </a>
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                
+            </div> 
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <!--------------------------------------------------------------------- Annee 2019 - 2021 -------------------------------------------------------------------------------------------------------------->
+
+
+            <div class="cards">
+
+                <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">2019 - 2021</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="cards">
+                
+                <card>
+                    <div class="order-container">
+                        <div class="order-blueheader">
+                            <span style="font-size:calc(1vw + 12px)">IT University degree</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">2019 - 2021</span>  <span></span><span style="font-size:calc(0.8vw + 9px)">University Institute of Technologie of Vannes</span> </h2>
+                            <span style="font-size:calc(0.7vw + 9px)">Vannes</span>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <h3 style="font-size:calc(0.7vw + 8px); text-align: center;">To find out more about my university, click on the logo!</h3>
+                            <br>
+                            <br>
+                            <a href="https://www.iutvannes.fr/" target="_blank">
+                            <img style="width: calc(2vw + 80px); display: block; margin-left: auto; margin-right: auto;"
+                                src="../../images/iut-vannes.png" />
+                            </a>
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                <card>
+                    <div class="order-container">
+                        <div class="order-redheader">
+                            <span style="font-size:calc(1vw + 12px)">Internship as a network administrator</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">04/12/2021 - 06/25/2021</span>  <span></span><span style="font-size:calc(0.8vw + 9px)">KARROAD</span> </h2>
+                            <span style="font-size:calc(0.7vw + 9px)">Sophia Antipolis</span>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <h3 style="font-size:calc(0.7vw + 8px); text-align: center;"> Tasks performed : </h3>
+                            <br>
+                            <p style="font-size:calc(0.5vw + 7px); text-align: center;">Moving the company network to AWS cloud. Create a VPN between the company's local network and the cloud,
+                            install software on AWS instances, set up a virtual private cloud (VPC) and configure it.</p>
+                        </p>
+                            <br>
+                            <br>
+                            <a href="https://karroad.com/" target="_blank">
+                            <img style="width: calc(1.5vw + 40px); display: block; margin-left: auto; margin-right: auto;"
+                                src="../../images/karroad.png" />
+                            </a>
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                
+            </div> 
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!------------------------ JOBS ETE ------------------------------------------------------>
+
+            <div class="cards">
+
+                <card>
+                    <div class="order-container">
+                        <div class="order-greenheader">
+                            <span style="font-size:calc(1vw + 12px)">Garbage man</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">Summer 2020</span>  <span></span><span style="font-size:calc(0.8vw + 9px)">The agglomeration of Saint-Malo</span> </h2>
+                            <span style="font-size:calc(0.7vw + 9px)">Saint-Malo</span>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <h3 style="font-size:calc(0.7vw + 8px); text-align: center;"> Collecting and sorting garbage. </h3>
+                            <br>
+                            <br>
+                            <a href="https://www.stmalo-agglomeration.fr/accueil.html" target="_blank">
+                            <img style="width: calc(1vw + 30px); display: block; margin-left: auto; margin-right: auto;"
+                                src="../../images/saintMaloAgglo.png" />
+                            </a>
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                <card>
+                    <div class="order-container">
+                        <div class="order-greenheader">
+                            <span style="font-size:calc(1vw + 12px)">Maintenance officer</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">Summer 2019</span>  <span></span><span style="font-size:calc(0.8vw + 9px)">Keolis Armor</span> </h2>
+                            <span style="font-size:calc(0.7vw + 9px)">Saint-Malo</span>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <h3 style="font-size:calc(0.7vw + 8px); text-align: center;"> Bus cleaning. </h3>
+                            <br>
+                            <br>
+                            <a href="https://keolis-armor.com/fr/" target="_blank">
+                            <img style="width: calc(2.5vw + 80px); display: block; margin-left: auto; margin-right: auto;"
+                                src="../../images/keolis.png" />
+                            </a>
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+            </div>
+
+            <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <br>
+            <br>
+            <br>
+            <br>
+        
+        
+
+            <!--------------------------------------------------------------------- Annee 2016 - 2019 -------------------------------------------------------------------------------------------------------------->
+
+            <div class="cards">
+
+                <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">2016 - 2019</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="cards">
+                
+                <card>
+                    <div class="order-container">
+                        <div class="order-blueheader">
+                            <span style="font-size:calc(1vw + 12px)">High-School Diploma</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">2016-2019</span>  <span></span><span style="font-size:calc(0.8vw + 9px)">High school Institution</span> </h2>
+                            <span style="font-size:calc(0.7vw + 9px)">Saint-Malo</span>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <h3 style="font-size:calc(0.7vw + 8px); text-align: center;"> To find out more about my university, click on the logo!</h3>
+                            <br>
+                            <br>
+                            <a href="https://www.ism-lapro.fr/" target="_blank">
+                            <img style="width: calc(15vw + 80px); display: block; margin-left: auto; margin-right: auto;"
+                                src="../../images/LogoInstitution.png" />
+                            </a>
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                
+            </div> 
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!------------------------ JOBS ETE ------------------------------------------------------>
+
+            <div class="cards">
+
+                <card>
+                    <div class="order-container">
+                        <div class="order-greenheader">
+                            <span style="font-size:calc(1vw + 12px)">Factory worker</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">Summer 2018</span>  <span></span><span style="font-size:calc(0.8vw + 9px)">La Cancalaise</span> </h2>
+                            <span style="font-size:calc(0.7vw + 9px)">Cancale</span>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <h3 style="font-size:calc(0.7vw + 8px); text-align: center;"> Sorting of mussels. </h3>
+                            <br>
+                            <br>
+                            <a href="https://www.lacancalaise.fr/" target="_blank">
+                            <img style="width: calc(4vw + 80px); display: block; margin-left: auto; margin-right: auto;"
+                                src="../../images/laCancalaise.png" />
+                            </a>
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                    <card>
+                        <div class="order-container">
+                            <div class="order-greenheader">
+                                <span style="font-size:calc(1vw + 12px)">Farm hand</span>
+                                <h2><span style="font-size:calc(0.5vw + 9px)">Summer 2017</span>  <span></span><span style="font-size:calc(0.8vw + 9px)">EARL LESNE CADIOU</span> </h2>
+                                <span style="font-size:calc(0.7vw + 9px)">Saint-Méloir-Des-Ondes</span>
+                                
+                            </div>
+                            <div class="order-list">
+                                <br>
+                                <br>
+                                <h3 style="font-size:calc(0.7vw + 8px); text-align: center;"> Planting leeks. </h3>
+                                <br>
+                                <br>
+                                <img style="width: calc(2.5vw + 80px); display: block; margin-left: auto; margin-right: auto;"
+                                    src="../../images/poireau.png" />
+                            </div>
+                            <div class="order-footer">
+                            </div>
+                        </div>
+                    </card>
+                
+            </div>
+
+            <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <div class="cards">
+                <div class="card">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+              
+            </div>
+                
+            
+        </div>      
 
     </body>
 
@@ -86,3 +469,4 @@
 
  
 </html>
+

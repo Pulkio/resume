@@ -2,54 +2,61 @@
     
    
     
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <head>
-      <link rel="stylesheet" href="../../css/background.css"> 
-      <link rel="stylesheet" href="../../css/menu3.css"> 
-      <link rel="stylesheet" href="../../css/title.css"> 
-      <link rel="stylesheet" href="../../css/buttonLang.css"> 
+  <head>
+    <link rel="stylesheet" href="../../css/background.css"> 
+    <link rel="stylesheet" href="../../css/menu3.css"> 
+    <link rel="stylesheet" href="../../css/title.css"> 
+    <link rel="stylesheet" href="../../css/buttonLang.css"> 
+    <link rel="stylesheet" href="../../css/box.css"> 
+
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Test</title>
+
+      <div class="topnav" id="myTopnav">
+        <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Home</a>
+        <a id="tab2" onClick="redirectPages(this.id)" href="#">Studies</a>
+        <a id="tab3" onClick="redirectPages(this.id)" href="#">Skills</a>
+        <a id="tab4" onClick="redirectPages(this.id)" href="#">Projects</a>
+        <a id="tab5" onClick="redirectPages(this.id)" href="#">Hobbies</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
   
-  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Test</title>
-  
-        <div class="topnav" id="myTopnav">
-            <a id="tab1" class="active" onClick="redirectPages(this.id)" href="#">Home</a>
-            <a id="tab2" onClick="redirectPages(this.id)" href="#">Studies</a>
-            <a id="tab3" onClick="redirectPages(this.id)" href="#">Skills</a>
-            <a id="tab4" onClick="redirectPages(this.id)" href="#">Projects</a>
-            <a id="tab5" onClick="redirectPages(this.id)" href="#">Hobbies</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    
-        <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
+      <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
             }
-        </script>
-        
-  
-  
-  
-    </head>
+          }
+      </script>
+      
+
+
+
+  </head>
 
     
+    
+    
+    <link rel="stylesheet" href="../../css/link.css"> 
+    <link rel="stylesheet" href="../../css/projets.css"> 
+    <link rel="stylesheet" href="../../css/ytresponsive.css"> 
 
+    
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <script src="../../js/changePages.js"></script>
        
 
-    <body>   
+    <body scroll="no" style="overflow: hidden;">   
 
 
 
@@ -60,10 +67,10 @@
             <div class="background">
 
             
-            <button id="lang" class="button-74" role="button">Français</button>
+              <button id="lang" class="button-74" role="button">Français</button>
+        
 
-            
-            <p class="popout">
+              <p class="popout">
                 <span>P</span>
                 <span>R</span>
                 <span>O</span>
@@ -73,10 +80,422 @@
                 <span>T</span>   
                 <span>S</span>
             </p>
+
+      
+
+            
+            <!--------------------------------------------------------------------- Java -------------------------------------------------------------------------------------------------------------->
+
+
+            <div class="cards">
+
+                <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Java</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="cards">
                 
-            </div>    
+                <card>
+                    <div class="order-container">
+                        <div class="order-redheader">
+                            <span style="font-size:calc(1vw + 12px)">Zen l'initié</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">Alone</span></h2>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <p style="font-size:calc(0.5vw + 7px); text-align: center;">
+                                Development of the board game Zen l'initie in Java.
+                                I realized this project alone from the conception to the realization.
+                               </p>
+                            <!-- <br>
+                            <br>
+                            <a class="myLinkBlue" href="http://elwin.vdhazel.com/" target="_blank">Github du projet : Zen l'initié</a> -->
+                            <br>
+                            <br>
+
+                            <div class="video-responsive">
+                                <iframe style="display: block; margin-left: auto; margin-right: auto;" width="560" height="315" src="https://www.youtube.com/embed/rVsSp58qFiY?start=95" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                            </div>
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                 
+                <card>
+                    <div class="order-container">
+                        <div class="order-redheader">
+                            <span style="font-size:calc(1vw + 12px)">Tamagotchi</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">By team</span></h2>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <p style="font-size:calc(0.5vw + 7px); text-align: center;">
+                                Development of the Tamagotchi game in Java by team.
+                                I did most of the backend.
+                               </p>
+                            <br>
+                            <br>
+                            <a class="myLinkRed" href="https://github.com/Ebenial/Tamagotchi" target="_blank">Project Github : Tamagotchi</a>
+                            <br>
+                            <br>
+
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                
+
+                
+            </div> 
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!--------------------------------------------------------------------- Python & Rcran -------------------------------------------------------------------------------------------------------------->
+
+
+            <div class="cards">
+
+                <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Python</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="cards">
+                
+                <card>
+                    <div class="order-container">
+                        <div class="order-greenheader">
+                            <span style="font-size:calc(1vw + 12px)">Data analysis Garmin watch</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">By pair</span></h2>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <p style="font-size:calc(0.5vw + 7px); text-align: center;">
+                                Retrieving data from my GPS watch automatically.
+                                Sorts data, and formats all data in usable formats.
+                                Create multiple complex graphs from the sorted data.
+                                Display with Shiny.
+                            </p>
+                            <br>
+                            <br>
+                            <a class="myLinkGreen" href="https://guillaume-cobat.shinyapps.io/app-running/" target="_blank">Shiny App Link</a>
+                            <br>
+                            <br>
+
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                 
+                <card>
+                    <div class="order-container">
+                        <div class="order-greenheader">
+                            <span style="font-size:calc(1vw + 12px)">PDF Parser</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">By team</span></h2>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <p style="font-size:calc(0.5vw + 7px); text-align: center;">
+                               Development of a pdf parser in Python by team that analyzes scientific papers and transforms them into xml files.
+                               </p>
+                            <br>
+                            <br>
+                            <a class="myLinkGreen" href="https://github.com/Nefaryos/PDF_Parser" target="_blank">Project Github : PDF Parser</a>
+                            <br>
+                            <br>
+
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                
+
+                
+            </div> 
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!--------------------------------------------------------------------- Android -------------------------------------------------------------------------------------------------------------->
+
+
+            <div class="cards">
+
+                <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Android</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="cards">
+                
+                <card>
+                    <div class="order-container">
+                        <div class="order-blueheader">
+                            <span style="font-size:calc(1vw + 12px)">OppRoadInfo</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">By team</span></h2>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <p style="font-size:calc(0.5vw + 7px); text-align: center;">
+                              Development of an Android traffic information
+                              application for the IRISA research laboratory. 
+                              The application works with ad-hoc
+                              networks. Cars transmit information via bluetooth
+                              thanks to a raspberry pi. I worked a lot on the backend
+                              of the application.
+                               </p>
+                            <br>
+                            <br>
+                            <a class="myLinkBlue" href="https://github.com/Pulkio/OppRoadInfo-DUT-" target="_blank">Project Github : OppRoadInfo</a>
+                            <br>
+                            <br>
+
+                            <div class="video-responsive">
+                                <iframe style="display: block; margin-left: auto; margin-right: auto;" width="560" height="315" src="https://www.youtube.com/embed/EGkhKuijmBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                            </div>
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                 
+                
+
+                
+            </div> 
+
+
+              <!--------------------------------------------------------------------- Web -------------------------------------------------------------------------------------------------------------->
+
+              <br>
+              <br>
+              <br>
+              <br>
+  
+               <div class="cards">
+  
+                  <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Web</p>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+  
+              <div class="cards">
+                  
+                  <card>
+                      <div class="order-container">
+                          <div class="order-redheader">
+                              <span style="font-size:calc(1vw + 12px)">Athlete ranking</span>
+                              <h2><span style="font-size:calc(0.5vw + 9px)">By pair</span></h2>
+                              
+                          </div>
+                          <div class="order-list">
+                              <br>
+                              <br>
+                              <p style="font-size:calc(0.5vw + 7px); text-align: center;">
+                                Development of a website in Symfony, which allows to create lists of athletes, and to assign them a certain number of points 
+                                according to the competitions in which they participate.
+                                This site is not currently in use.
+                                 </p>
+                              <br>
+                              <br>
+                              <a class="myLinkRed" href="https://athlete-ranking.fr/" target="_blank">Website link </a>
+                              <br>
+                              <br>
+  
+                          </div>
+                          <div class="order-footer">
+                          </div>
+                      </div>
+                  </card>
+  
+  
+                  <card>
+                      <div class="order-container">
+                          <div class="order-redheader">
+                              <span style="font-size:calc(1vw + 12px)">This portfolio</span>
+                              <h2><span style="font-size:calc(0.5vw + 9px)">Alone</span></h2>
+                              
+                          </div>
+                          <div class="order-list">
+                              <br>
+                              <br>
+                              <p style="font-size:calc(0.5vw + 7px); text-align: center;">
+                                I made this website entirely in html, css and javascript.
+                                 </p>
+                              <br>
+                              <br>
+  
+                          </div>
+                          <div class="order-footer">
+                          </div>
+                      </div>
+                  </card>
+  
+                   
+                  
+  
+                  
+              </div> 
+
+             <!--------------------------------------------------------------------- C++ -------------------------------------------------------------------------------------------------------------->
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+             <div class="cards">
+
+                <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">C++</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="cards">
+                
+                <card>
+                    <div class="order-container">
+                        <div class="order-greenheader">
+                            <span style="font-size:calc(1vw + 12px)">Naval battle</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">Alone</span></h2>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <p style="font-size:calc(0.5vw + 7px); text-align: center;">
+                                Development of the naval battle game in C++.
+                               </p>
+                            <br>
+                            <br>
+                            <a class="myLinkGreen" href="https://github.com/Pulkio/batailleNavale" target="_blank">Project Github : Naval battle </a>
+                            <br>
+                            <br>
+
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+
+                 
+                
+
+                
+            </div> 
+
+          
+
+            <!--------------------------------------------------------------------- Unity -------------------------------------------------------------------------------------------------------------->
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+             <div class="cards">
+
+                <p style="font-weight: bold; font-size:calc(1vw + 20px); text-align: center; font-style: italic;">Unity</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="cards">
+                
+                <card>
+                    <div class="order-container">
+                        <div class="order-blueheader">
+                            <span style="font-size:calc(1vw + 12px)">3D Environnement Unity</span>
+                            <h2><span style="font-size:calc(0.5vw + 9px)">Alone</span></h2>
+                            
+                        </div>
+                        <div class="order-list">
+                            <br>
+                            <br>
+                            <p style="font-size:calc(0.5vw + 7px); text-align: center;">
+                               Development of a Unity 3D Environment for use in virtual reality. 
+                               </p>
+                            <br>
+                            <br>
+                            <a class="myLinkBlue" href="https://github.com/Pulkio/unityTerrain" target="_blank">Project Github : Unity Terrain </a>
+                            <br>
+                            <br>
+
+                        </div>
+                        <div class="order-footer">
+                        </div>
+                    </div>
+                </card>
+                 
+             
+            </div> 
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="cards">
+                
+                <card>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </card>
+                 
+             
+            </div> 
+
+
+        
+
+            
+           
+               
+        
+            
+   
         </div>      
 
+    
     </body>
 
       
@@ -86,3 +505,29 @@
 
  
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+       
+        
+            
+            
+
+            
+           
+                
+
