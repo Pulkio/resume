@@ -1,5 +1,6 @@
 .card {
     color: rgb(0, 0, 0);
+    
     padding: 1rem;
     text-align: center;
   }
@@ -11,3 +12,18 @@
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
+
+.blue {
+  background-color: #a9dbde;
+}
+
+.green {
+  /* background-color:#69dea7 */
+  background-color: #a9dbde;
+}
+
+.red {
+  /* background-color:#da6363 */
+  background-color: #a9dbde;
+}
