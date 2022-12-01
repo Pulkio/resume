@@ -10,11 +10,23 @@
   
 }
 
-.order-header {
+.order-blueheader {
     text-align: center;
     background-color: #a9dbde;
     height: auto;
 
 
    
+}
+
+.order-greenheader {
+    text-align: center;
+    background-color: #69dea7;
+    height: auto;
+}
+
+.order-redheader {
+    text-align: center;
+    background-color: #da6363;
+    height: auto;
 }
